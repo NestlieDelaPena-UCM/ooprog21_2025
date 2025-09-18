@@ -16,7 +16,7 @@ public class JOptionPaneDialogs {
                                 JOptionPane.YES_NO_CANCEL_OPTION);
 
             if (choice == JOptionPane.YES_OPTION) {
-                JOptionPane.showMessageDialog(null, "Hello " + name, "Result!" + "!", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Your name is: " + name, "Result", JOptionPane.INFORMATION_MESSAGE);
                 break;
             } else if (choice == JOptionPane.CANCEL_OPTION || choice == JOptionPane.NO_OPTION) {
                 continue;
