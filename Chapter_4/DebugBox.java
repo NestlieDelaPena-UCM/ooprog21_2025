@@ -8,8 +8,7 @@ public class DebugBox {
         width = 1;
         height = 1;
     }
-
-    // Fixed constructor to correctly assign width, length, and height
+    
     public DebugBox(int width, int length, int height) {
         this.width = width;
         this.length = length;
@@ -21,7 +20,6 @@ public class DebugBox {
             length + " Height: " + height);
     }
 
-    // Added return type 'double' for getVolume method
     public double getVolume() {
         double vol = length * width * height;
         return vol;
