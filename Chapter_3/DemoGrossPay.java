@@ -1,15 +1,19 @@
+import java.util.Scanner;
+
 public class DemoGrossPay {
-    static final double HOURLY_RATE = 22.75;
-
-    public static void main(String[] args) {
-        calculateGross(10.0);
-        calculateGross(25.0);
-        calculateGross(37.5);
-    }
-
-    public static void calculateGross(double hours) {
-        double grossPay = hours * HOURLY_RATE;
-        System.out.println(hours + " hours at $" + HOURLY_RATE +
-                " per hour is $" + grossPay);
-    }
+   public static void main(String[] args) {
+   
+   Scanner input = new Scanner(System.in);
+   
+   System.out.print("Enter the number of hours worked >> ");
+   double hours = input.nextDouble(); 
+   
+   calculateGross(hours);
+   }
+   
+   public static void calculateGross(double hours) {
+      final double RATE = 22.75; //standard hourly rate which i will assume is dollars
+      double grossPay = hours * RATE;
+      System.out.println("Your gross pay in $ is: " + grossPay);
+   }
 }
