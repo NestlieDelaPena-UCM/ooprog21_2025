@@ -1,0 +1,29 @@
+import java.util.Arrays;
+
+public class ArraysDemo {
+
+    public static void display(String message, int array[]) {
+        System.out.print(message);
+        System.out.print("\t");
+        for (int value : array) {
+            System.out.print(value + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+
+        int[] numbers = new int[5];
+        display("Original array:         ", numbers);
+
+        Arrays.fill(numbers, 8);
+        display("After filling with 8s:  ", numbers);
+
+        numbers[2] = 6;
+        numbers[4] = 3;
+        display("After changing values:  ", numbers);
+
+        Arrays.sort(numbers);
+        display("After sorting:          ", numbers);
+    }
+}
